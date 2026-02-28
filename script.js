@@ -27,8 +27,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Navigation (Optional improvement)
-    // Add logic here if needed for hamburger menu
+    // Mobile Navigation
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    }
 
     // Booking Form Submission
     const bookingForm = document.querySelector('.res-form');
