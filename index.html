@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MOJO — премиальная кальянная в Тольятти. Авторские миксы, атмосфера искусства дыма. Бронируйте столик онлайн.">
+    <meta name="theme-color" content="#0a0a0a">
     <title>MOJO | Искусство Дыма. За Гранью Обыденного.</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +18,7 @@
     <header id="header">
         <nav class="container">
             <div class="logo">MOJO</div>
-            <div class="hamburger">
+            <div class="hamburger" role="button" aria-label="Открыть меню" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -32,10 +35,10 @@
 
     <!-- Hero -->
     <section id="hero" class="hero-section">
-        <div class="hero-bg" style="background-image: url('images/hero_bg.png');"></div>
+        <div class="hero-bg"></div>
         <div class="container hero-content">
             <h1 class="reveal">MOJO: Искусство Дыма.<br>За Гранью Обыденного.</h1>
-            <div class="hero-btns reveal" style="animation-delay: 0.2s;">
+            <div class="hero-btns reveal delay-1">
                 <a href="#booking" class="btn btn-gold">Забронировать Столик</a>
             </div>
         </div>
@@ -53,25 +56,25 @@
                         <h4>Фирменный Кальян MOJO</h4>
                     </div>
                 </div>
-                <div class="aroma-card reveal" style="animation-delay: 0.1s;">
+                <div class="aroma-card reveal delay-1">
                     <img src="images/aroma_berries.png" alt="Berry Mix">
                     <div class="aroma-info">
                         <h4>Ледяная Ягода</h4>
                     </div>
                 </div>
-                <div class="aroma-card reveal" style="animation-delay: 0.2s;">
+                <div class="aroma-card reveal delay-2">
                     <img src="images/aroma_smoke.png" alt="MOJO Smoke Art">
                     <div class="aroma-info">
                         <h4>Дымное искусство MOJO</h4>
                     </div>
                 </div>
-                <div class="aroma-card reveal" style="animation-delay: 0.3s;">
+                <div class="aroma-card reveal delay-3">
                     <img src="images/aroma_tea.png" alt="Tea and Coffee">
                     <div class="aroma-info">
                         <h4>Авторские Чай и Кофе</h4>
                     </div>
                 </div>
-                <div class="aroma-card reveal" style="animation-delay: 0.4s;">
+                <div class="aroma-card reveal delay-4">
                     <img src="images/aroma_citrus.png" alt="Citrus Mix">
                     <div class="aroma-info">
                         <h4>Солнечный Цитрус</h4>
@@ -87,7 +90,7 @@
             <div class="hookah-visual reveal">
                 <img src="images/premium_hookah.png" alt="Premium Hookah">
             </div>
-            <div class="premium-fact reveal" style="animation-delay: 0.2s;">
+            <div class="premium-fact reveal delay-2">
                 <div class="fact-box">
                     <h4>Искусство миксологии</h4>
                     <p>В MOJO мы не просто подаем дым. Наши мастера — художники вкуса, знающие всё о правильном
@@ -119,12 +122,12 @@
     <!-- Reservations Section -->
     <section id="booking" class="reservations-section">
         <div class="container">
-            <h2 class="serif text-center" style="margin-bottom: 60px;">БРОНИРОВАНИЕ</h2>
+            <h2 class="serif text-center reservations-title">БРОНИРОВАНИЕ</h2>
             <div class="reservations-wrapper">
                 <div class="res-image reveal">
                     <img src="images/booking_img.png" alt="Бронирование столов">
                 </div>
-                <div class="res-form-wrapper reveal" style="animation-delay: 0.2s;">
+                <div class="res-form-wrapper reveal delay-2">
                     <form class="res-form">
                         <input type="text" placeholder="Имя" required>
                         <input type="tel" placeholder="Телефон" required>
@@ -163,8 +166,8 @@
                 <p>🕒 15:00 - 02:00 ежедневно</p>
             </div>
             <div class="footer-social-links">
-                <a href="https://t.me/MOJO_TLT" target="_blank">Telegram</a>
-                <a href="https://vk.ru/newmojo" target="_blank">VKontakte</a>
+                <a href="https://t.me/MOJO_TLT" target="_blank" rel="noopener noreferrer">Telegram</a>
+                <a href="https://vk.ru/newmojo" target="_blank" rel="noopener noreferrer">VKontakte</a>
             </div>
             <div class="footer-copyright">© 2024 MOJO. Все права защищены.</div>
         </div>
