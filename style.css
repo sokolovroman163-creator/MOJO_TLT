@@ -202,7 +202,7 @@ header nav {
     height: 100%;
     background-image: url('images/hero_bg.png');
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     filter: brightness(0.5);
     z-index: -1;
 }
@@ -749,6 +749,7 @@ footer {
     color: #fff;
     font-size: 14px;
     outline: none;
+    color-scheme: dark;
 }
 
 .res-form input::placeholder {
@@ -1254,16 +1255,25 @@ footer {
 
     .gallery-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        height: 250px;
+        width: 100%;
+    }
+
+    .gallery-item img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .gallery-grid .main-item {
         grid-row: span 1;
-    }
-
-    .gallery-item img {
-        height: 250px;
     }
 
     /* Booking / Reservations */

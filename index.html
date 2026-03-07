@@ -129,9 +129,10 @@
                 </div>
                 <div class="res-form-wrapper reveal delay-2">
                     <form class="res-form">
-                        <input type="text" placeholder="Имя" required>
-                        <input type="tel" placeholder="Телефон" required>
-                        <input type="text" placeholder="Количество гостей" required>
+                        <input type="text" name="name" placeholder="Имя" required>
+                        <input type="tel" name="phone" placeholder="Телефон" required>
+                        <input type="date" required id="booking-date" aria-label="Дата бронирования">
+                        <input type="number" name="guests" placeholder="Количество гостей" required min="1">
                         <button type="submit" class="btn-submit">Оставить заявку</button>
                     </form>
                 </div>
